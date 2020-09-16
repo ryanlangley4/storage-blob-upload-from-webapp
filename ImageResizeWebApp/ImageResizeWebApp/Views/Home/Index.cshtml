@@ -147,7 +147,8 @@
         paramName: "files", // The name that will be used to transfer the file
         dictDefaultMessage: "Drop files here or Click to Upload",
         addRemoveLinks: true, // Allows for cancellation of file upload and remove thumbnail
-        init: function() {
+       maxFilesize: 256,
+	   init: function() {
             myDropzone = this;
             myDropzone.on("success", function(file, response) {
                 console.log("Success");
